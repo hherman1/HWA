@@ -1,0 +1,5 @@
+module Main where
+import qualified Lib as L
+
+main :: IO ()
+main = Lib.main

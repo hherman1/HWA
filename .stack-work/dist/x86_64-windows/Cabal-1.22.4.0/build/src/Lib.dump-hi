@@ -1,0 +1,977 @@
+
+==================== FINAL INTERFACE ====================
+2015-10-05 23:20:58.8617754 UTC
+
+interface simpl_F1QUneAtpBV7KvjCfhLiy8:Lib 7102
+  interface hash: 491da1444dff218b9c9fe97d2208e8c9
+  ABI hash: bd844e99e40c2a64829029b94901ce76
+  export-list hash: 4dbc838df2b47fbb19cfb2f1617dab2d
+  orphan hash: a24a686045311009dd5fc8fafdff96c8
+  flag hash: 82132bc38f639ca069c711fb83a4878a
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.benchmarks
+  Lib.compGraph
+  Lib.compGraphFromMap
+  Lib.compToNodeMap
+  Lib.defaultWeight
+  Lib.findEdges
+  Lib.findNeighbors
+  Lib.genNeighbors
+  Lib.getComposition
+  Lib.getPath
+  Lib.hugewords
+  Lib.initGraph
+  Lib.main
+  Lib.pathToStrings
+  Lib.smallwords
+  Lib.stringsToMap
+  Lib.text
+  Lib.textGraph
+  Lib.CompGraph
+  Lib.Composition
+  Lib.Topsort
+  Lib.Weight
+module dependencies: Data.Graph.Inductive.Query.SP.DAG
+package dependencies: Glob-0.7.5@Glob_L13Y0vSyEWuCVMQ1UQqjan
+                      Win32-2.3.1.0@Win32_JH0ECVJdFmmG0JOvttvGqi
+                      abstract-par-0.3.3@abstr_0mXTTcYXqAJ3jpj7PU0gDI
+                      aeson-0.8.0.2@aeson_7Jkt8TblefeCM7xjWOsRcG
+                      ansi-terminal-0.6.2.3@ansit_EPZdHsMzHIUFrPItJDdIw6
+                      ansi-wl-pprint-0.6.7.3@ansiw_BB1apNAAL9XAzrkvh5hdB7
+                      array-0.5.1.0@array_E0sTtauuKsGDLZoT7lTbgZ
+                      attoparsec-0.12.1.6@attop_5hY081sve2m8WX8p1glGNS base-4.8.1.0
+                      binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd
+                      blaze-builder-0.4.0.1@blaze_6BKEupqZliOD9r4rLG9ckJ
+                      bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH
+                      cassava-0.4.4.0@cassa_2ph509lC6BmK1BRDAbjHYd
+                      containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN
+                      criterion-1.1.0.0@crite_41aZu1xMSCbIh02n2ZUzhs
+                      deepseq-1.4.1.1@deeps_LbCWUlehDDeLxurARKDH5o
+                      directory-1.2.2.0@direc_8rNXL6eoIjwIJ6AkzPFdYW
+                      dlist-0.7.1.2@dlist_7AixcwRWCwX32HiPCcE7zz
+                      erf-2.0.0.0@erf_Be5uVBtPUiRDcHpku4LRl7
+                      fgl-5.5.2.3@fgl_5kh7Ffsnjax0Ppv4qaraEf
+                      filepath-1.4.0.0@filep_KsGE6pHE5eZHSN90ZVax6A ghc-prim-0.4.0.0
+                      hashable-1.2.3.3@hasha_2GTZqecVp8NJZrNuKzGxfy
+                      hastache-0.6.1@hasta_IgN0erPE8ECDW62jMSJd6I
+                      ieee754-0.7.6@ieee7_83kzroviKXw4npyWO9tKff integer-gmp-1.0.0.0
+                      math-functions-0.1.5.2@mathf_KCmCPm8XM1ZKr2Op3JXmlU
+                      monad-par-extras-0.3.3@monad_1cXIGmkNxf47Tl0iib9Q6s
+                      monad-par-0.3.4.7@monad_Dcv3MYPJTUNLJHSmonzbvY
+                      mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU
+                      mwc-random-0.13.3.2@mwcra_5AlBuMep87u0LRbNXGLv3t
+                      optparse-applicative-0.11.0.2@optpa_HbbGhX4nF317ZSs2zLlKIF
+                      pretty-1.1.2.0@prett_7UQTOB05U7lIYPkFOVraeR
+                      primitive-0.6@primi_3d4UsQu7pJCEtlsxN3gLjk
+                      process-1.2.3.0@proce_92p6c0OJebP7mjyJ5QnhVN
+                      scientific-0.3.3.8@scien_5NQHiMKEgH2DOLHdLSFbA2
+                      statistics-0.13.2.3@stati_JtWikhKRYByLklTxvqwIl0
+                      syb-0.5.1@syb_8qmIMcBFhWM7BKRUTFb5M4 template-haskell-2.10.0.0
+                      text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh
+                      time-1.5.0.1@time_ECG3PhVYxEUEM046TXoOWk
+                      transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X
+                      unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a
+                      vector-binary-instances-0.2.1.0@vecto_0hcxLAgqiag6QHIb7sqj29
+                      vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs
+                      vector-algorithms-0.7.0.1@vecto_1hb5dLM55tsCBqNp969CWr
+                      vector-th-unbox-0.2.1.2@vecto_7nVQdzpWFj08il8CgtfxZo
+orphans: aeson-0.8.0.2@aeson_7Jkt8TblefeCM7xjWOsRcG:Data.Aeson.Types.Generic
+         aeson-0.8.0.2@aeson_7Jkt8TblefeCM7xjWOsRcG:Data.Aeson.Types.Instances
+         attoparsec-0.12.1.6@attop_5hY081sve2m8WX8p1glGNS:Data.Attoparsec.ByteString.Char8
+         base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+         binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString.Builder
+         hashable-1.2.3.3@hasha_2GTZqecVp8NJZrNuKzGxfy:Data.Hashable.Generic
+         monad-par-0.3.4.7@monad_Dcv3MYPJTUNLJHSmonzbvY:Control.Monad.Par.Scheds.Trace
+         syb-0.5.1@syb_8qmIMcBFhWM7BKRUTFb5M4:Data.Generics.Instances
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Show
+         time-1.5.0.1@time_ECG3PhVYxEUEM046TXoOWk:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_ECG3PhVYxEUEM046TXoOWk:Data.Time.Format.Parse
+         time-1.5.0.1@time_ECG3PhVYxEUEM046TXoOWk:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.Trans.Error
+         vector-binary-instances-0.2.1.0@vecto_0hcxLAgqiag6QHIb7sqj29:Data.Vector.Binary
+         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Fusion.Stream
+         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Unboxed
+family instance modules: attoparsec-0.12.1.6@attop_5hY081sve2m8WX8p1glGNS:Data.Attoparsec.Internal.Types
+                         base-4.8.1.0:Control.Applicative base-4.8.1.0:Data.Either
+                         base-4.8.1.0:Data.Functor.Identity base-4.8.1.0:Data.Monoid
+                         base-4.8.1.0:Data.Type.Equality base-4.8.1.0:Data.Void
+                         base-4.8.1.0:GHC.Exts base-4.8.1.0:GHC.Generics
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntMap.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntSet.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Sequence
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Set.Base
+                         criterion-1.1.0.0@crite_41aZu1xMSCbIh02n2ZUzhs:Criterion.Main.Options
+                         criterion-1.1.0.0@crite_41aZu1xMSCbIh02n2ZUzhs:Criterion.Report
+                         criterion-1.1.0.0@crite_41aZu1xMSCbIh02n2ZUzhs:Criterion.Types
+                         dlist-0.7.1.2@dlist_7AixcwRWCwX32HiPCcE7zz:Data.DList
+                         fgl-5.5.2.3@fgl_5kh7Ffsnjax0Ppv4qaraEf:Data.Graph.Inductive.PatriciaTree
+                         math-functions-0.1.5.2@mathf_KCmCPm8XM1ZKr2Op3JXmlU:Numeric.Sum
+                         mwc-random-0.13.3.2@mwcra_5AlBuMep87u0LRbNXGLv3t:System.Random.MWC
+                         pretty-1.1.2.0@prett_7UQTOB05U7lIYPkFOVraeR:Text.PrettyPrint.HughesPJ
+                         primitive-0.6@primi_3d4UsQu7pJCEtlsxN3gLjk:Control.Monad.Primitive
+                         statistics-0.13.2.3@stati_JtWikhKRYByLklTxvqwIl0:Statistics.Distribution.Normal
+                         statistics-0.13.2.3@stati_JtWikhKRYByLklTxvqwIl0:Statistics.Math.RootFinding
+                         statistics-0.13.2.3@stati_JtWikhKRYByLklTxvqwIl0:Statistics.Resampling
+                         statistics-0.13.2.3@stati_JtWikhKRYByLklTxvqwIl0:Statistics.Resampling.Bootstrap
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+                         unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a:Data.HashMap.Base
+                         unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a:Data.HashSet
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Primitive
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Storable
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Unboxed
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Unboxed.Base
+import  -/  base-4.8.1.0:Control.Monad dfea142d91349c4861427789d50d5b80
+import  -/  base-4.8.1.0:Data.Foldable 2e5acb797cfda6b3b7fabd7052abe290
+import  -/  base-4.8.1.0:Data.Functor 5c701b0af1708f0192a25dfe14ce6274
+import  -/  base-4.8.1.0:Data.Maybe 1cb58de2b04ee3c0c0a7dc9201184aff
+import  -/  base-4.8.1.0:Data.Ord a885fb4f85a39c11c2b68af93fcbded7
+import  -/  base-4.8.1.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
+import  -/  base-4.8.1.0:GHC.Base a4939789b2cfd60b36ed163e56a623cd
+import  -/  base-4.8.1.0:GHC.List f31ed8784b3e05f1397195751f7d74ea
+import  -/  base-4.8.1.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.1.0:GHC.Show b8c65ca3124f92a166c9f05120382442
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  base-4.8.1.0:System.IO 5482930cc48b7457dc7c518d05c22912
+import  -/  containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map b09191b0d75d9f361c6588842e15c671
+import  -/  containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base 5c2ff57702bb6d3bb1e1daa9506827de
+import  -/  containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Lazy 6b770deb06fd2d10908ecbd48d23897c
+import  -/  criterion-1.1.0.0@crite_41aZu1xMSCbIh02n2ZUzhs:Criterion.Main 0b4bf55f3c5604f7b071ef0802284aa8
+import  -/  criterion-1.1.0.0@crite_41aZu1xMSCbIh02n2ZUzhs:Criterion.Types b33eb1823960f768f91c0a86da719904
+import  -/  fgl-5.5.2.3@fgl_5kh7Ffsnjax0Ppv4qaraEf:Data.Graph.Inductive.Graph 525512bd2cbc1ebaa968dc4aae69927f
+import  -/  fgl-5.5.2.3@fgl_5kh7Ffsnjax0Ppv4qaraEf:Data.Graph.Inductive.PatriciaTree 8f54cdcb054568992557fa5322a71ab2
+import  -/  fgl-5.5.2.3@fgl_5kh7Ffsnjax0Ppv4qaraEf:Data.Graph.Inductive.Query.DFS 2387ed78e1a62dd4b37b01b143204471
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  Data.Graph.Inductive.Query.SP.DAG 1f86ae7f0c4aa459017a45a54531110d
+  exports: f3f9d73177ce649d43db5be66369cb14
+  longestPath 249fdad59641aa330139c95b69958ae1
+import  -/  text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text eb5988ee557913e85f60274dc5e34c92
+import  -/  text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.IO 4542bbd322d290435124fdc842b8e215
+import  -/  text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Internal e35029679fcd45368167f1014949632b
+import  -/  vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector 3ae9c4b915ef1e7406fb71f504544c9c
+05f178d54910a6467b14db625f90c2a2
+  $s$fOrdMap2 :: GHC.Classes.Ord (GHC.Types.Char, GHC.Types.Int)
+  {- Unfolding: (GHC.Classes.$fOrd(,)
+                   @ GHC.Types.Char
+                   @ GHC.Types.Int
+                   Lib.$s$fOrdMap3
+                   GHC.Classes.$fOrdChar
+                   GHC.Classes.$fOrdInt) -}
+d9462d7d3a5e3475b37dab2d8a6ab4e3
+  $s$fOrdMap3 :: GHC.Classes.Eq (GHC.Types.Char, GHC.Types.Int)
+  {- Unfolding: (GHC.Classes.$fEq(,)
+                   @ GHC.Types.Char
+                   @ GHC.Types.Int
+                   GHC.Classes.$fEqChar
+                   GHC.Classes.$fEqInt) -}
+7f8ca515a331e614aba13ae32f665b33
+  $sfromList ::
+    [(Lib.Composition, a)] -> Data.Map.Base.Map Lib.Composition a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a ds :: [(Lib.Composition, a)] ->
+                 case ds of wild {
+                   [] -> Data.Map.Base.Tip @ Lib.Composition @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { DEFAULT ->
+                           Data.Map.Base.Bin
+                             @ Lib.Composition
+                             @ a
+                             1
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ Lib.Composition @ a)
+                             (Data.Map.Base.Tip @ Lib.Composition @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case GHC.Classes.$w$ccompare14
+                                  @ (GHC.Types.Char, GHC.Types.Int)
+                                  Lib.$s$fOrdMap2
+                                  (Data.Map.Base.toAscList @ GHC.Types.Char @ GHC.Types.Int kx)
+                                  (Data.Map.Base.toAscList
+                                     @ GHC.Types.Char
+                                     @ GHC.Types.Int
+                                     ky) of wild4 {
+                             DEFAULT
+                             -> case kx of dt { DEFAULT ->
+                                Lib.$sfromList1
+                                  @ a
+                                  (Data.Map.Base.Bin
+                                     @ Lib.Composition
+                                     @ a
+                                     1
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ Lib.Composition @ a)
+                                     (Data.Map.Base.Tip @ Lib.Composition @ a))
+                                  wild2 }
+                             GHC.Types.LT
+                             -> case kx of dt { DEFAULT ->
+                                Lib.$wpoly_go10
+                                  @ a
+                                  1
+                                  (Data.Map.Base.Bin
+                                     @ Lib.Composition
+                                     @ a
+                                     1
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ Lib.Composition @ a)
+                                     (Data.Map.Base.Tip @ Lib.Composition @ a))
+                                  wild2 } } } } } }) -}
+1210b2496bfe9f2c5635253a3cf30d72
+  $sfromList1 ::
+    Data.Map.Base.Map Lib.Composition a1
+    -> [(Lib.Composition, a1)] -> Data.Map.Base.Map Lib.Composition a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+bed1340fa7ab218c730562283967c74e
+  $sinsert_$sgo10 ::
+    Lib.Composition
+    -> a1
+    -> Data.Map.Base.Map Lib.Composition a1
+    -> Data.Map.Base.Map Lib.Composition a1
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,1*U> -}
+610218a7302709b99a2b66bfa0ebe2c3
+  $slookup1 ::
+    Lib.Composition
+    -> Data.Map.Base.Map Lib.Composition a -> GHC.Base.Maybe a
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+1e7a14cbcf219db143a4144c5d0efc3b
+  $w$sgo10 ::
+    (GHC.Types.Char -> a1 -> a1 -> a1)
+    -> GHC.Prim.Char#
+    -> a1
+    -> Data.Map.Base.Map GHC.Types.Char a1
+    -> Data.Map.Base.Map GHC.Types.Char a1
+  {- Arity: 4, Strictness: <L,1*C1(C1(C1(U)))><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+6f98051a4ba5fc2f057f4febb6e61ff7
+  $wgetComposition ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int# -> GHC.Prim.Int# -> Lib.Composition
+  {- Arity: 3, Strictness: <L,U><L,U><L,U>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.ByteArray#
+                   ww1 :: GHC.Prim.Int#
+                   ww2 :: GHC.Prim.Int# ->
+                 let {
+                   a :: GHC.Prim.Int# = GHC.Prim.+# ww1 ww2
+                 } in
+                 letrec {
+                   $wloop_foldr :: GHC.Prim.Int# -> Lib.Composition
+                     {- Arity: 1, Strictness: <L,U>, Inline: [0] -}
+                   = \ ww3 :: GHC.Prim.Int# ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.>=# ww3 a) of wild1 {
+                       GHC.Types.False
+                       -> case GHC.Prim.indexWord16Array# ww ww3 of r# { DEFAULT ->
+                          case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.geWord# r# __word 55296) of wild2 {
+                            GHC.Types.False
+                            -> Lib.$w$sgo10
+                                 @ GHC.Types.Int
+                                 Lib.findNeighbors2
+                                 (GHC.Prim.chr# (GHC.Prim.word2Int# r#))
+                                 Lib.defaultWeight
+                                 ($wloop_foldr (GHC.Prim.+# ww3 1))
+                            GHC.Types.True
+                            -> case GHC.Prim.tagToEnum#
+                                      @ GHC.Types.Bool
+                                      (GHC.Prim.leWord# r# __word 56319) of wild3 {
+                                 GHC.Types.False
+                                 -> Lib.$w$sgo10
+                                      @ GHC.Types.Int
+                                      Lib.findNeighbors2
+                                      (GHC.Prim.chr# (GHC.Prim.word2Int# r#))
+                                      Lib.defaultWeight
+                                      ($wloop_foldr (GHC.Prim.+# ww3 1))
+                                 GHC.Types.True
+                                 -> case GHC.Prim.indexWord16Array#
+                                           ww
+                                           (GHC.Prim.+# ww3 1) of r#1 { DEFAULT ->
+                                    Lib.$w$sgo10
+                                      @ GHC.Types.Int
+                                      Lib.findNeighbors2
+                                      (GHC.Prim.chr#
+                                         (GHC.Prim.+#
+                                            (GHC.Prim.+#
+                                               (GHC.Prim.uncheckedIShiftL#
+                                                  (GHC.Prim.-# (GHC.Prim.word2Int# r#) 55296)
+                                                  10)
+                                               (GHC.Prim.-# (GHC.Prim.word2Int# r#1) 56320))
+                                            65536))
+                                      Lib.defaultWeight
+                                      ($wloop_foldr (GHC.Prim.+# ww3 2)) } } } }
+                       GHC.Types.True
+                       -> Data.Map.Base.Tip @ GHC.Types.Char @ GHC.Types.Int }
+                 } in
+                 $wloop_foldr ww1) -}
+7f9baa096c68536dcc20cd3fa3e62520
+  $wgetPath ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# Data.Graph.Inductive.Graph.Node
+    -> [Data.Graph.Inductive.Graph.Node]
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><L,U>, Inline: [0] -}
+e17fc6be84f7a29608ffcbe1f7890964
+  $wpoly_go10 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map Lib.Composition a
+    -> [(Lib.Composition, a)]
+    -> Data.Map.Base.Map Lib.Composition a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+149de0819d1c86bac9d331610ddc3fbb
+  type CompGraph (gr :: * -> * -> *) =
+    gr Lib.Composition GHC.Types.Int
+b95ef0b30144e4e64bc27c4a7ca374b6
+  type Composition = Data.Map.Base.Map GHC.Types.Char GHC.Types.Int
+d93c4ff706ea65407c8e97eb017eb957
+  type Topsort = [Data.Graph.Inductive.Graph.Node]
+569991e89bccbbc2d871eb9ed9d849af
+  type Weight = GHC.Types.Int
+f93a5fac80bb92e10b482f5dc9df0ad2
+  benchmarks :: GHC.Types.Bool
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True) GHC.Types.False -}
+509601cb68960cb3bc063b0da0fb454b
+  compGraph ::
+    Lib.Weight
+    -> [Data.Text.Internal.Text]
+    -> Lib.CompGraph Data.Graph.Inductive.PatriciaTree.Gr
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ w :: Lib.Weight ws :: [Data.Text.Internal.Text] ->
+                 case Data.Map.Base.$wmapAccumL
+                        @ [Data.Graph.Inductive.Graph.Node]
+                        @ Lib.Composition
+                        @ Data.Text.Internal.Text
+                        @ Data.Graph.Inductive.Graph.Node
+                        Lib.compGraph2
+                        Lib.compGraph1
+                        (Lib.stringsToMap ws) of ww { (#,#) ww6 ww7 ->
+                 Lib.compGraph_$sinitGraph w ww7 }) -}
+bbdb7d51fa4243c7adc809a4d8a80e3e
+  compGraph1 :: [GHC.Types.Int]
+  {- Unfolding: (GHC.Enum.eftInt 1 9223372036854775807) -}
+aa25ded0f9a0b229f2f5d84ecb7e31d4
+  compGraph2 ::
+    [Data.Graph.Inductive.Graph.Node]
+    -> Lib.Composition
+    -> Data.Text.Internal.Text
+    -> ([Data.Graph.Inductive.Graph.Node],
+        Data.Graph.Inductive.Graph.Node)
+  {- Arity: 3,
+     Unfolding: (\ a' :: [Data.Graph.Inductive.Graph.Node]
+                   ds :: Lib.Composition[OneShot]
+                   x' :: Data.Text.Internal.Text[OneShot] ->
+                 (GHC.List.tail @ Data.Graph.Inductive.Graph.Node a',
+                  GHC.List.head @ Data.Graph.Inductive.Graph.Node a')) -}
+0bfd5a06e79a0d7f54eb6961ce0960f2
+  compGraphFromMap ::
+    Lib.Weight
+    -> Data.Map.Base.Map Lib.Composition a
+    -> Lib.CompGraph Data.Graph.Inductive.PatriciaTree.Gr
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   w :: Lib.Weight
+                   eta :: Data.Map.Base.Map Lib.Composition a ->
+                 case Lib.compGraphFromMap1 @ a eta of wild { (,) ds1 y ->
+                 Lib.compGraph_$sinitGraph w y }) -}
+3dd74080aeb9bfc07d3c89ca245c95a8
+  compGraphFromMap1 ::
+    Data.Map.Base.Map Lib.Composition a
+    -> ([Data.Graph.Inductive.Graph.Node],
+        Data.Map.Base.Map Lib.Composition Data.Graph.Inductive.Graph.Node)
+  {- Arity: 1, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a w :: Data.Map.Base.Map Lib.Composition a ->
+                 case Data.Map.Base.$wmapAccumL
+                        @ [Data.Graph.Inductive.Graph.Node]
+                        @ Lib.Composition
+                        @ a
+                        @ Data.Graph.Inductive.Graph.Node
+                        (Lib.compGraphFromMap2 @ a)
+                        Lib.compGraph1
+                        w of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+40eb1da11bc8553ae42ce70910e50cfb
+  compGraphFromMap2 ::
+    [Data.Graph.Inductive.Graph.Node]
+    -> Lib.Composition
+    -> a
+    -> ([Data.Graph.Inductive.Graph.Node],
+        Data.Graph.Inductive.Graph.Node)
+  {- Arity: 3,
+     Unfolding: (\ @ a
+                   a' :: [Data.Graph.Inductive.Graph.Node]
+                   ds :: Lib.Composition[OneShot]
+                   x' :: a[OneShot] ->
+                 (GHC.List.tail @ Data.Graph.Inductive.Graph.Node a',
+                  GHC.List.head @ Data.Graph.Inductive.Graph.Node a')) -}
+8b56304304eee4922b2cea43224bdead
+  compGraph_$sinitGraph ::
+    Lib.Weight
+    -> Data.Map.Base.Map
+         Lib.Composition Data.Graph.Inductive.Graph.Node
+    -> Lib.CompGraph Data.Graph.Inductive.PatriciaTree.Gr
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ w :: Lib.Weight
+                   mcomp :: Data.Map.Base.Map
+                              Lib.Composition Data.Graph.Inductive.Graph.Node ->
+                 letrec {
+                   xs :: [GHC.Types.Int] = GHC.Types.: @ GHC.Types.Int w xs
+                 } in
+                 letrec {
+                   go10 :: [(Data.Graph.Inductive.Graph.Node,
+                             Data.Graph.Inductive.Graph.Node,
+                             Lib.Weight)]
+                           -> Data.Map.Base.Map
+                                Lib.Composition Data.Graph.Inductive.Graph.Node
+                           -> [(Data.Graph.Inductive.Graph.Node,
+                                Data.Graph.Inductive.Graph.Node,
+                                Lib.Weight)]
+                     {- Arity: 2, Strictness: <L,1*U><S,1*U> -}
+                   = \ z' :: [(Data.Graph.Inductive.Graph.Node,
+                               Data.Graph.Inductive.Graph.Node,
+                               Lib.Weight)]
+                       ds :: Data.Map.Base.Map
+                               Lib.Composition Data.Graph.Inductive.Graph.Node ->
+                     case ds of wild {
+                       Data.Map.Base.Bin dt kx x l r
+                       -> go10
+                            (letrec {
+                               xs1 :: [GHC.Types.Int] = GHC.Types.: @ GHC.Types.Int x xs1
+                             } in
+                             GHC.Base.++
+                               @ (Data.Graph.Inductive.Graph.Node,
+                                  Data.Graph.Inductive.Graph.Node,
+                                  Lib.Weight)
+                               (GHC.List.zip3
+                                  @ Data.Graph.Inductive.Graph.Node
+                                  @ Data.Graph.Inductive.Graph.Node
+                                  @ Lib.Weight
+                                  xs1
+                                  (Lib.findNeighbors kx mcomp)
+                                  xs)
+                               (go10 z' r))
+                            l
+                       Data.Map.Base.Tip -> z' }
+                 } in
+                 Data.Graph.Inductive.PatriciaTree.$fGraphGr_$cmkGraph
+                   @ Lib.Composition
+                   @ Lib.Weight
+                   (Lib.compGraph_go10
+                      (GHC.Types.[] @ (Data.Graph.Inductive.Graph.Node, Lib.Composition))
+                      mcomp)
+                   (go10
+                      (GHC.Types.[]
+                         @ (Data.Graph.Inductive.Graph.Node,
+                            Data.Graph.Inductive.Graph.Node,
+                            Lib.Weight))
+                      mcomp)) -}
+95a504c43947138f878cdc96ae9ece5b
+  compGraph_go10 ::
+    [(Data.Graph.Inductive.Graph.Node, Lib.Composition)]
+    -> Data.Map.Base.Map
+         Lib.Composition Data.Graph.Inductive.Graph.Node
+    -> [(Data.Graph.Inductive.Graph.Node, Lib.Composition)]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U> -}
+1e120b7ec5635671f515b9deb78f668e
+  compToNodeMap ::
+    Data.Map.Base.Map Lib.Composition a
+    -> Data.Map.Base.Map
+         Lib.Composition Data.Graph.Inductive.Graph.Node
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a x :: Data.Map.Base.Map Lib.Composition a ->
+                 case Lib.compGraphFromMap1 @ a x of wild { (,) ds1 y -> y }) -}
+77428004a17a5055941605aff53de0a5
+  defaultWeight :: Lib.Weight
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1) -}
+b085175c4d50b1d6655de6cece6f316a
+  findEdges ::
+    Lib.Weight
+    -> Data.Graph.Inductive.Graph.Node
+    -> Lib.Composition
+    -> Data.Map.Base.Map
+         Lib.Composition Data.Graph.Inductive.Graph.Node
+    -> [Data.Graph.Inductive.Graph.LEdge Lib.Weight]
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ w :: Lib.Weight
+                   n :: Data.Graph.Inductive.Graph.Node
+                   comp :: Lib.Composition
+                   mcomp :: Data.Map.Base.Map
+                              Lib.Composition Data.Graph.Inductive.Graph.Node ->
+                 GHC.List.zip3
+                   @ Data.Graph.Inductive.Graph.Node
+                   @ Data.Graph.Inductive.Graph.Node
+                   @ Lib.Weight
+                   (GHC.Base.build
+                      @ GHC.Types.Int
+                      (\ @ b c :: GHC.Types.Int -> b -> b[OneShot] _n :: b[OneShot] ->
+                       GHC.List.repeatFB @ GHC.Types.Int @ b c n))
+                   (Lib.findNeighbors comp mcomp)
+                   (GHC.Base.build
+                      @ GHC.Types.Int
+                      (\ @ b c :: GHC.Types.Int -> b -> b[OneShot] _n :: b[OneShot] ->
+                       GHC.List.repeatFB @ GHC.Types.Int @ b c w))) -}
+f3f39a4619dbf562bec9a5d10d9c1211
+  findNeighbors ::
+    Lib.Composition
+    -> Data.Map.Base.Map
+         Lib.Composition Data.Graph.Inductive.Graph.Node
+    -> [Data.Graph.Inductive.Graph.Node]
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: (\ comp :: Lib.Composition
+                   mcomp :: Data.Map.Base.Map
+                              Lib.Composition Data.Graph.Inductive.Graph.Node ->
+                 Data.Maybe.catMaybes1
+                   @ Data.Graph.Inductive.Graph.Node
+                   (GHC.Base.map
+                      @ (Data.Map.Base.Map GHC.Types.Char GHC.Types.Int)
+                      @ (GHC.Base.Maybe Data.Graph.Inductive.Graph.Node)
+                      (\ y :: Lib.Composition -> Lib.$slookup1 @ GHC.Types.Int y mcomp)
+                      (Lib.findNeighbors_$sgenNeighbors comp))) -}
+4ac4937da8b107f51653eed8531971f6
+  findNeighbors1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Enum.eftChar 97 122) -}
+3e7a855efc64af47ad41028903ec2e61
+  findNeighbors2 ::
+    GHC.Types.Char -> GHC.Types.Int -> GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Unfolding: (\ ds :: GHC.Types.Char[OneShot]
+                   x' :: GHC.Types.Int[OneShot]
+                   y' :: GHC.Types.Int[OneShot] ->
+                 GHC.Num.$fNumInt_$c+ x' y') -}
+9048d37fb7161d0bf24540cccd6818d0
+  findNeighbors_$sgenNeighbors ::
+    Lib.Composition -> [Lib.Composition]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ eta :: Lib.Composition ->
+                 letrec {
+                   go :: [GHC.Types.Char] -> [Lib.Composition]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ ds :: [GHC.Types.Char] ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ Lib.Composition
+                       : y ys
+                       -> GHC.Base.++
+                            @ Lib.Composition
+                            (GHC.Types.:
+                               @ (Data.Map.Base.Map GHC.Types.Char GHC.Types.Int)
+                               (case y of ww { GHC.Types.C# ww1 ->
+                                Lib.$w$sgo10
+                                  @ GHC.Types.Int
+                                  Lib.findNeighbors2
+                                  ww1
+                                  Lib.defaultWeight
+                                  eta })
+                               (GHC.Types.[] @ (Data.Map.Base.Map GHC.Types.Char GHC.Types.Int)))
+                            (go ys) }
+                 } in
+                 go Lib.findNeighbors1) -}
+4cb21996ec82c437a91bf68713b6d2ff
+  genNeighbors ::
+    GHC.Base.MonadPlus m => Lib.Composition -> m Lib.Composition
+  {- Arity: 2, Strictness: <S,U(A,1*U,1*U,C(C1(U)))><L,U>,
+     Unfolding: (\ @ (m :: * -> *)
+                   $dMonadPlus :: GHC.Base.MonadPlus m
+                   eta :: Lib.Composition ->
+                 let {
+                   $dMonad :: GHC.Base.Monad m = GHC.Base.$p2MonadPlus @ m $dMonadPlus
+                 } in
+                 let {
+                   lvl5 :: Data.Map.Base.Map GHC.Types.Char GHC.Types.Int
+                           -> m (Data.Map.Base.Map GHC.Types.Char GHC.Types.Int)
+                   = GHC.Base.return
+                       @ m
+                       $dMonad
+                       @ (Data.Map.Base.Map GHC.Types.Char GHC.Types.Int)
+                 } in
+                 let {
+                   z :: m Lib.Composition
+                   = GHC.Base.mzero @ m $dMonadPlus @ Lib.Composition
+                 } in
+                 letrec {
+                   go :: [GHC.Types.Char] -> m Lib.Composition
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ ds :: [GHC.Types.Char] ->
+                     case ds of wild {
+                       [] -> z
+                       : y ys
+                       -> GHC.Base.mplus
+                            @ m
+                            $dMonadPlus
+                            @ Lib.Composition
+                            (lvl5
+                               (case y of ww { GHC.Types.C# ww1 ->
+                                Lib.$w$sgo10
+                                  @ GHC.Types.Int
+                                  Lib.findNeighbors2
+                                  ww1
+                                  Lib.defaultWeight
+                                  eta }))
+                            (go ys) }
+                 } in
+                 go Lib.findNeighbors1) -}
+42df04b19494e4c4025cfb141d72b726
+  getComposition :: Data.Text.Internal.Text -> Lib.Composition
+  {- Arity: 1, Strictness: <S,1*U(U,U,U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Data.Text.Internal.Text ->
+                 case w of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Lib.$wgetComposition ww1 ww2 ww3 }) -}
+ef148011e3c03d1d8564607831f6b5db
+  getPath ::
+    Data.Graph.Inductive.Graph.Node
+    -> Data.Vector.Vector Data.Graph.Inductive.Graph.Node
+    -> [Data.Graph.Inductive.Graph.Node]
+  {- Arity: 2, Strictness: <S,1*U(U)><S,1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Data.Graph.Inductive.Graph.Node
+                   w1 :: Data.Vector.Vector Data.Graph.Inductive.Graph.Node ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Data.Vector.Vector ww3 ww4 ww5 ->
+                 Lib.$wgetPath ww1 ww3 ww4 ww5 } }) -}
+fd376104a55b12dc545a2e3dcda2d05f
+  hugewords :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "C:/Users/thepr/Dropbox/School Work/HW/Algorithms/HWA/HUGE_WORDS.txt"#) -}
+b698ca76445615beb4cd8142826b7aad
+  initGraph ::
+    Data.Graph.Inductive.Graph.Graph gr =>
+    Lib.Weight
+    -> Data.Map.Base.Map
+         Lib.Composition Data.Graph.Inductive.Graph.Node
+    -> Lib.CompGraph gr
+  {- Arity: 3,
+     Strictness: <S(LLLC(C(S))LLLLL),1*U(A,A,A,1*C1(C1(U)),A,A,A,A,A)><L,U><L,U>,
+     Unfolding: (\ @ (gr :: * -> * -> *)
+                   $dGraph :: Data.Graph.Inductive.Graph.Graph gr
+                   w :: Lib.Weight
+                   mcomp :: Data.Map.Base.Map
+                              Lib.Composition Data.Graph.Inductive.Graph.Node ->
+                 Data.Graph.Inductive.Graph.mkGraph
+                   @ gr
+                   $dGraph
+                   @ Lib.Composition
+                   @ Lib.Weight
+                   (Lib.initGraph_go10
+                      (GHC.Types.[] @ (Data.Graph.Inductive.Graph.Node, Lib.Composition))
+                      mcomp)
+                   (letrec {
+                      xs :: [GHC.Types.Int] = GHC.Types.: @ GHC.Types.Int w xs
+                    } in
+                    letrec {
+                      go10 :: [(Data.Graph.Inductive.Graph.Node,
+                                Data.Graph.Inductive.Graph.Node,
+                                Lib.Weight)]
+                              -> Data.Map.Base.Map
+                                   Lib.Composition Data.Graph.Inductive.Graph.Node
+                              -> [(Data.Graph.Inductive.Graph.Node,
+                                   Data.Graph.Inductive.Graph.Node,
+                                   Lib.Weight)]
+                        {- Arity: 2, Strictness: <L,1*U><S,1*U> -}
+                      = \ z' :: [(Data.Graph.Inductive.Graph.Node,
+                                  Data.Graph.Inductive.Graph.Node,
+                                  Lib.Weight)]
+                          ds :: Data.Map.Base.Map
+                                  Lib.Composition Data.Graph.Inductive.Graph.Node ->
+                        case ds of wild {
+                          Data.Map.Base.Bin dt kx x l r
+                          -> go10
+                               (letrec {
+                                  xs1 :: [GHC.Types.Int] = GHC.Types.: @ GHC.Types.Int x xs1
+                                } in
+                                GHC.Base.++
+                                  @ (Data.Graph.Inductive.Graph.Node,
+                                     Data.Graph.Inductive.Graph.Node,
+                                     Lib.Weight)
+                                  (GHC.List.zip3
+                                     @ Data.Graph.Inductive.Graph.Node
+                                     @ Data.Graph.Inductive.Graph.Node
+                                     @ Lib.Weight
+                                     xs1
+                                     (Lib.findNeighbors kx mcomp)
+                                     xs)
+                                  (go10 z' r))
+                               l
+                          Data.Map.Base.Tip -> z' }
+                    } in
+                    go10
+                      (GHC.Types.[]
+                         @ (Data.Graph.Inductive.Graph.Node,
+                            Data.Graph.Inductive.Graph.Node,
+                            Lib.Weight))
+                      mcomp)) -}
+49ca83de165f75e8aa55785ed1d2149d
+  initGraph_go10 ::
+    [(Data.Graph.Inductive.Graph.Node, Lib.Composition)]
+    -> Data.Map.Base.Map
+         Lib.Composition Data.Graph.Inductive.Graph.Node
+    -> [(Data.Graph.Inductive.Graph.Node, Lib.Composition)]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U> -}
+5292c1e0ad3b162567b0fc116caa2af3
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+9d2eedbaea06d0afa17a00be177d0e14
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case GHC.IO.Handle.FD.openFile1
+                        Lib.hugewords
+                        GHC.IO.IOMode.ReadMode
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case Data.Text.IO.getContents2 ipv1 ipv of ds { (#,#) ipv2 ipv3 ->
+                 let {
+                   wordMap :: Data.Map.Base.Map
+                                Lib.Composition Data.Text.Internal.Text
+                   = let {
+                       ts :: [Data.Text.Internal.Text]
+                       = case ipv3 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                         Data.Text.$wlines ww1 ww2 ww3 }
+                     } in
+                     Lib.$sfromList
+                       @ Data.Text.Internal.Text
+                       (Lib.stringsToMap_go ts ts)
+                 } in
+                 let {
+                   wordGraph :: Lib.CompGraph Data.Graph.Inductive.PatriciaTree.Gr
+                   = case Data.Map.Base.$wmapAccumL
+                            @ [Data.Graph.Inductive.Graph.Node]
+                            @ Lib.Composition
+                            @ Data.Text.Internal.Text
+                            @ Data.Graph.Inductive.Graph.Node
+                            (Lib.compGraphFromMap2 @ Data.Text.Internal.Text)
+                            Lib.compGraph1
+                            wordMap of ww { (#,#) ww1 ww2 ->
+                     Lib.compGraph_$sinitGraph Lib.defaultWeight ww2 }
+                 } in
+                 let {
+                   ts :: [Data.Graph.Inductive.Graph.Node]
+                   = Data.Graph.Inductive.Query.DFS.topsort
+                       @ Data.Graph.Inductive.PatriciaTree.Gr
+                       @ Lib.Composition
+                       @ GHC.Types.Int
+                       Data.Graph.Inductive.PatriciaTree.$fGraphGr
+                       wordGraph
+                 } in
+                 case (Lib.main2
+                         (case GHC.List.$wlenAcc @ GHC.Types.Int ts 0 of ww2 { DEFAULT ->
+                          GHC.Types.I# ww2 })
+                         ts
+                         wordGraph)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <Data.Graph.Inductive.Graph.Path>_R)
+                        ipv2 of ds2 { (#,#) ipv4 ipv5 ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   (GHC.Show.showList__
+                      @ Data.Text.Internal.Text
+                      Data.Text.Show.$fShowText1
+                      (Lib.main_$spathToStrings wordMap wordGraph ipv5)
+                      (GHC.Types.[] @ GHC.Types.Char))
+                   GHC.Types.True
+                   ipv4 } } }) -}
+fe3dccbdab639cd109f57c76e3f7b9df
+  main2 ::
+    GHC.Types.Int
+    -> [Data.Graph.Inductive.Graph.Node]
+    -> Data.Graph.Inductive.PatriciaTree.Gr
+         Lib.Composition GHC.Types.Int
+    -> GHC.Types.IO Data.Graph.Inductive.Graph.Path
+  {- Unfolding: (Data.Graph.Inductive.Query.SP.DAG.longestPath
+                   @ []
+                   @ Data.Graph.Inductive.PatriciaTree.Gr
+                   @ Lib.Composition
+                   @ GHC.Types.Int
+                   Data.Graph.Inductive.PatriciaTree.$fGraphGr
+                   GHC.Real.$fRealInt
+                   Data.Foldable.$fFoldable[]) -}
+1995cf2003c20a9eda00314940bda30e
+  main_$spathToStrings ::
+    Data.Map.Base.Map Lib.Composition Data.Text.Internal.Text
+    -> Lib.CompGraph Data.Graph.Inductive.PatriciaTree.Gr
+    -> [Data.Graph.Inductive.Graph.Node]
+    -> [Data.Text.Internal.Text]
+  {- Arity: 3, Strictness: <L,U><L,U><S,1*U>,
+     Unfolding: (\ wordMap :: Data.Map.Base.Map
+                                Lib.Composition Data.Text.Internal.Text
+                   wordGraph :: Lib.CompGraph Data.Graph.Inductive.PatriciaTree.Gr
+                   maxPath :: [Data.Graph.Inductive.Graph.Node] ->
+                 Data.Maybe.catMaybes1
+                   @ Data.Text.Internal.Text
+                   (GHC.Base.map
+                      @ GHC.Types.Int
+                      @ (GHC.Base.Maybe Data.Text.Internal.Text)
+                      (\ m :: Data.Graph.Inductive.Graph.Node ->
+                       case m of ww { GHC.Types.I# ww1 ->
+                       case Data.Graph.Inductive.PatriciaTree.$w$cmatch
+                              @ Lib.Composition
+                              @ GHC.Types.Int
+                              ww1
+                              wordGraph of ww2 { (#,#) ww3 ww4 ->
+                       case ww3 of wild1 {
+                         GHC.Base.Nothing -> GHC.Base.Nothing @ Data.Text.Internal.Text
+                         GHC.Base.Just a1
+                         -> case a1 of wild2 { (,,,) ds ds2 l ds3 ->
+                            Lib.$slookup1 @ Data.Text.Internal.Text l wordMap } } } })
+                      maxPath)) -}
+b234cac2b18f9c7b5e5d300d79e01b4b
+  pathToStrings ::
+    Data.Graph.Inductive.Graph.Graph gr =>
+    Data.Map.Base.Map Lib.Composition Data.Text.Internal.Text
+    -> Lib.CompGraph gr
+    -> [Data.Graph.Inductive.Graph.Node]
+    -> [Data.Text.Internal.Text]
+  {- Arity: 4,
+     Strictness: <L,U(A,A,C(C1(U(1*U,A))),A,A,A,A,A,A)><L,U><L,U><S,1*U>,
+     Unfolding: (\ @ (gr :: * -> * -> *)
+                   $dGraph :: Data.Graph.Inductive.Graph.Graph gr
+                   wordMap :: Data.Map.Base.Map
+                                Lib.Composition Data.Text.Internal.Text
+                   wordGraph :: Lib.CompGraph gr
+                   maxPath :: [Data.Graph.Inductive.Graph.Node] ->
+                 Data.Maybe.catMaybes1
+                   @ Data.Text.Internal.Text
+                   (GHC.Base.map
+                      @ GHC.Types.Int
+                      @ (GHC.Base.Maybe Data.Text.Internal.Text)
+                      (\ m :: Data.Graph.Inductive.Graph.Node ->
+                       case Data.Graph.Inductive.Graph.match
+                              @ gr
+                              $dGraph
+                              @ Lib.Composition
+                              @ GHC.Types.Int
+                              m
+                              wordGraph of wild { (,) x ds1 ->
+                       case x of wild1 {
+                         GHC.Base.Nothing -> GHC.Base.Nothing @ Data.Text.Internal.Text
+                         GHC.Base.Just a1
+                         -> case a1 of wild2 { (,,,) ds ds2 l ds3 ->
+                            Lib.$slookup1 @ Data.Text.Internal.Text l wordMap } } })
+                      maxPath)) -}
+f288d5fcdb594d7e484b60b4d27c3252
+  smallwords :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "C:/Users/thepr/Dropbox/School Work/HW/Algorithms/HWA/WORDS.txt"#) -}
+383aa5928b03473d001888acc9cba8c2
+  stringsToMap ::
+    [Data.Text.Internal.Text]
+    -> Data.Map.Base.Map Lib.Composition Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ ts :: [Data.Text.Internal.Text] ->
+                 Lib.$sfromList
+                   @ Data.Text.Internal.Text
+                   (Lib.stringsToMap_go ts ts)) -}
+755e31ca811b0540011dadf0d3af13df
+  stringsToMap_go ::
+    [Data.Text.Internal.Text]
+    -> [Data.Text.Internal.Text]
+    -> [(Data.Map.Base.Map GHC.Types.Char GHC.Types.Int,
+         Data.Text.Internal.Text)]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U> -}
+9e5ebbdceee686f1c2dc11c70ba381a3
+  text :: GHC.Types.IO [Data.Text.Internal.Text]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.text1
+                  `cast`
+                (Sym (GHC.Types.NTCo:IO[0] <[Data.Text.Internal.Text]>_R)) -}
+6dc8a96fca77fd265b790413b20ff8f3
+  text1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [Data.Text.Internal.Text] #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case GHC.IO.Handle.FD.openFile1
+                        Lib.hugewords
+                        GHC.IO.IOMode.ReadMode
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case Data.Text.IO.getContents2 ipv1 ipv of ds { (#,#) ipv2 ipv3 ->
+                 (# ipv2, Data.Text.lines ipv3 #) } }) -}
+0bb0183585139561778cc14e332da175
+  textGraph ::
+    GHC.Types.IO (Lib.CompGraph Data.Graph.Inductive.PatriciaTree.Gr)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.textGraph1
+                  `cast`
+                (Sym (GHC.Types.NTCo:IO[0]
+                          <Lib.CompGraph Data.Graph.Inductive.PatriciaTree.Gr>_R)) -}
+fba350ebbc89ad30188139bb341e442f
+  textGraph1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Lib.CompGraph Data.Graph.Inductive.PatriciaTree.Gr #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case GHC.IO.Handle.FD.openFile1
+                        Lib.hugewords
+                        GHC.IO.IOMode.ReadMode
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case Data.Text.IO.getContents2 ipv1 ipv of ds { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    let {
+                      ts :: [Data.Text.Internal.Text]
+                      = case ipv3 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                        Data.Text.$wlines ww1 ww2 ww3 }
+                    } in
+                    case Data.Map.Base.$wmapAccumL
+                           @ [Data.Graph.Inductive.Graph.Node]
+                           @ Lib.Composition
+                           @ Data.Text.Internal.Text
+                           @ Data.Graph.Inductive.Graph.Node
+                           Lib.compGraph2
+                           Lib.compGraph1
+                           (Lib.$sfromList
+                              @ Data.Text.Internal.Text
+                              (Lib.stringsToMap_go ts ts)) of ww { (#,#) ww6 ww7 ->
+                    Lib.compGraph_$sinitGraph Lib.defaultWeight ww7 } #) } }) -}
+"SPEC genNeighbors @ []" [ALWAYS] forall $dMonadPlus :: GHC.Base.MonadPlus
+                                                          []
+  Lib.genNeighbors @ [] $dMonadPlus
+  = Lib.findNeighbors_$sgenNeighbors
+"SPEC initGraph @ Gr" [ALWAYS] forall $dGraph :: Data.Graph.Inductive.Graph.Graph
+                                                   Data.Graph.Inductive.PatriciaTree.Gr
+  Lib.initGraph @ Data.Graph.Inductive.PatriciaTree.Gr $dGraph
+  = Lib.compGraph_$sinitGraph
+"SPEC pathToStrings @ Gr" [ALWAYS] forall $dGraph :: Data.Graph.Inductive.Graph.Graph
+                                                       Data.Graph.Inductive.PatriciaTree.Gr
+  Lib.pathToStrings @ Data.Graph.Inductive.PatriciaTree.Gr $dGraph
+  = Lib.main_$spathToStrings
+"SPEC/Lib fromList @ Composition _" [ALWAYS] forall @ a
+                                                    $dOrd :: GHC.Classes.Ord Lib.Composition
+  Data.Map.Base.fromList @ (Data.Map.Base.Map
+                              GHC.Types.Char GHC.Types.Int)
+                         @ a
+                         $dOrd
+  = Lib.$sfromList @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

@@ -1,0 +1,1040 @@
+
+==================== FINAL INTERFACE ====================
+2015-10-05 23:20:57.9907492 UTC
+
+interface simpl_F1QUneAtpBV7KvjCfhLiy8:Data.Graph.Inductive.Query.SP.DAG 7102
+  interface hash: cd87ec7809b2ab3ebf709ad1442ef700
+  ABI hash: 1f86ae7f0c4aa459017a45a54531110d
+  export-list hash: f3f9d73177ce649d43db5be66369cb14
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 967843b5e2c044667692daf02e9d346c
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Data.Graph.Inductive.Query.SP.DAG.longestPath
+  Data.Graph.Inductive.Query.SP.DAG.longestPathBetweenNodes
+  Data.Graph.Inductive.Query.SP.DAG.longestPathFromSource
+  Data.Graph.Inductive.Query.SP.DAG.runPaths
+  Data.Graph.Inductive.Query.SP.DAG.shortestPathBetweenNodes
+  Data.Graph.Inductive.Query.SP.DAG.tracePath
+  Data.Graph.Inductive.Query.SP.DAG.Number
+module dependencies:
+package dependencies: array-0.5.1.0@array_E0sTtauuKsGDLZoT7lTbgZ
+                      base-4.8.1.0 containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN
+                      deepseq-1.4.1.1@deeps_LbCWUlehDDeLxurARKDH5o
+                      fgl-5.5.2.3@fgl_5kh7Ffsnjax0Ppv4qaraEf ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 primitive-0.6@primi_3d4UsQu7pJCEtlsxN3gLjk
+                      transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X
+                      vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs
+orphans: base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+         transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.Trans.Error
+         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Fusion.Stream
+family instance modules: base-4.8.1.0:Control.Applicative
+                         base-4.8.1.0:Data.Either base-4.8.1.0:Data.Functor.Identity
+                         base-4.8.1.0:Data.Monoid base-4.8.1.0:Data.Type.Equality
+                         base-4.8.1.0:Data.Void base-4.8.1.0:GHC.Exts
+                         base-4.8.1.0:GHC.Generics
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntSet.Base
+                         primitive-0.6@primi_3d4UsQu7pJCEtlsxN3gLjk:Control.Monad.Primitive
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector
+import  -/  base-4.8.1.0:Control.Monad dfea142d91349c4861427789d50d5b80
+import  -/  base-4.8.1.0:Data.Foldable 2e5acb797cfda6b3b7fabd7052abe290
+import  -/  base-4.8.1.0:Data.Functor 5c701b0af1708f0192a25dfe14ce6274
+import  -/  base-4.8.1.0:GHC.Base a4939789b2cfd60b36ed163e56a623cd
+import  -/  base-4.8.1.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.1.0:GHC.Real 4c3b525ecbd4d62bb287aec36d4c2f0d
+import  -/  base-4.8.1.0:GHC.Show b8c65ca3124f92a166c9f05120382442
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  fgl-5.5.2.3@fgl_5kh7Ffsnjax0Ppv4qaraEf:Data.Graph.Inductive.Graph 525512bd2cbc1ebaa968dc4aae69927f
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector 3ae9c4b915ef1e7406fb71f504544c9c
+import  -/  vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Mutable c3ea4de7b6eaddd1757e2182885e1892
+14b090908b6937833c55c23f1118730a
+  $fEqNumber ::
+    GHC.Classes.Eq a =>
+    GHC.Classes.Eq (Data.Graph.Inductive.Query.SP.DAG.Number a)
+  DFunId[0]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a7 $dEq :: GHC.Classes.Eq a7.
+                  @ (Data.Graph.Inductive.Query.SP.DAG.Number a7)
+                  (Data.Graph.Inductive.Query.SP.DAG.$fEqNumber_$c== @ a7 $dEq)
+                  (Data.Graph.Inductive.Query.SP.DAG.$fEqNumber_$c/= @ a7 $dEq) -}
+14b090908b6937833c55c23f1118730a
+  $fEqNumber_$c/= ::
+    GHC.Classes.Eq a =>
+    Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ a7
+                   $dEq :: GHC.Classes.Eq a7
+                   a8 :: Data.Graph.Inductive.Query.SP.DAG.Number a7
+                   b :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 case a8 of wild {
+                   Data.Graph.Inductive.Query.SP.DAG.Infinity
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Data.Graph.Inductive.Query.SP.DAG.Infinity -> GHC.Types.False }
+                   Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                        -> GHC.Types.False }
+                   Data.Graph.Inductive.Query.SP.DAG.Number a9
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Data.Graph.Inductive.Query.SP.DAG.Number b1
+                        -> case GHC.Classes.== @ a7 $dEq a9 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False } } }) -}
+14b090908b6937833c55c23f1118730a
+  $fEqNumber_$c== ::
+    GHC.Classes.Eq a =>
+    Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ a7
+                   $dEq :: GHC.Classes.Eq a7
+                   ds :: Data.Graph.Inductive.Query.SP.DAG.Number a7
+                   ds1 :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 case ds of wild {
+                   Data.Graph.Inductive.Query.SP.DAG.Infinity
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Data.Graph.Inductive.Query.SP.DAG.Infinity -> GHC.Types.True }
+                   Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                        -> GHC.Types.True }
+                   Data.Graph.Inductive.Query.SP.DAG.Number a8
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Data.Graph.Inductive.Query.SP.DAG.Number b1
+                        -> GHC.Classes.== @ a7 $dEq a8 b1 } }) -}
+14b090908b6937833c55c23f1118730a
+  $fFunctorNumber ::
+    GHC.Base.Functor Data.Graph.Inductive.Query.SP.DAG.Number
+  DFunId[0]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Graph.Inductive.Query.SP.DAG.Number
+                  Data.Graph.Inductive.Query.SP.DAG.$fFunctorNumber_$cfmap
+                  Data.Graph.Inductive.Query.SP.DAG.$fFunctorNumber_$c<$ -}
+14b090908b6937833c55c23f1118730a
+  $fFunctorNumber_$c<$ ::
+    a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number b
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a7
+                   @ b
+                   eta :: a7
+                   ds :: Data.Graph.Inductive.Query.SP.DAG.Number b ->
+                 case ds of wild {
+                   Data.Graph.Inductive.Query.SP.DAG.Infinity
+                   -> Data.Graph.Inductive.Query.SP.DAG.Infinity @ a7
+                   Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                   -> Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity @ a7
+                   Data.Graph.Inductive.Query.SP.DAG.Number x
+                   -> Data.Graph.Inductive.Query.SP.DAG.Number @ a7 eta }) -}
+14b090908b6937833c55c23f1118730a
+  $fFunctorNumber_$cfmap ::
+    (a -> b)
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a7
+                   @ b
+                   f :: a7 -> b
+                   ds :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 case ds of wild {
+                   Data.Graph.Inductive.Query.SP.DAG.Infinity
+                   -> Data.Graph.Inductive.Query.SP.DAG.Infinity @ b
+                   Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                   -> Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity @ b
+                   Data.Graph.Inductive.Query.SP.DAG.Number x
+                   -> Data.Graph.Inductive.Query.SP.DAG.Number @ b (f x) }) -}
+14b090908b6937833c55c23f1118730a
+  $fOrdNumber ::
+    (GHC.Classes.Eq (Data.Graph.Inductive.Query.SP.DAG.Number a),
+     GHC.Classes.Ord a) =>
+    GHC.Classes.Ord (Data.Graph.Inductive.Query.SP.DAG.Number a)
+  DFunId[1]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U><L,U(A,C(C1(U)),A,A,A,A,A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a7
+                      $dEq :: GHC.Classes.Eq
+                                (Data.Graph.Inductive.Query.SP.DAG.Number a7)
+                      $dOrd :: GHC.Classes.Ord a7.
+                  @ (Data.Graph.Inductive.Query.SP.DAG.Number a7)
+                  $dEq
+                  (Data.Graph.Inductive.Query.SP.DAG.$fOrdNumber_$ccompare
+                     @ a7
+                     $dEq
+                     $dOrd)
+                  (Data.Graph.Inductive.Query.SP.DAG.$fOrdNumber_$c< @ a7 $dEq $dOrd)
+                  (Data.Graph.Inductive.Query.SP.DAG.$fOrdNumber_$c<=
+                     @ a7
+                     $dEq
+                     $dOrd)
+                  (Data.Graph.Inductive.Query.SP.DAG.$fOrdNumber_$c> @ a7 $dEq $dOrd)
+                  (Data.Graph.Inductive.Query.SP.DAG.$fOrdNumber_$c>=
+                     @ a7
+                     $dEq
+                     $dOrd)
+                  (Data.Graph.Inductive.Query.SP.DAG.$fOrdNumber_$cmax
+                     @ a7
+                     $dEq
+                     $dOrd)
+                  (Data.Graph.Inductive.Query.SP.DAG.$fOrdNumber_$cmin
+                     @ a7
+                     $dEq
+                     $dOrd) -}
+14b090908b6937833c55c23f1118730a
+  $fOrdNumber_$c< ::
+    (GHC.Classes.Eq (Data.Graph.Inductive.Query.SP.DAG.Number a),
+     GHC.Classes.Ord a) =>
+    Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><L,1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, True)
+                (\ @ a7
+                   w :: GHC.Classes.Eq (Data.Graph.Inductive.Query.SP.DAG.Number a7)
+                   w1 :: GHC.Classes.Ord a7
+                   w2 :: Data.Graph.Inductive.Query.SP.DAG.Number a7
+                   w3 :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 Data.Graph.Inductive.Query.SP.DAG.$w$c< @ a7 w1 w2 w3) -}
+14b090908b6937833c55c23f1118730a
+  $fOrdNumber_$c<= ::
+    (GHC.Classes.Eq (Data.Graph.Inductive.Query.SP.DAG.Number a),
+     GHC.Classes.Ord a) =>
+    Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><L,1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, True)
+                (\ @ a7
+                   w :: GHC.Classes.Eq (Data.Graph.Inductive.Query.SP.DAG.Number a7)
+                   w1 :: GHC.Classes.Ord a7
+                   w2 :: Data.Graph.Inductive.Query.SP.DAG.Number a7
+                   w3 :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 Data.Graph.Inductive.Query.SP.DAG.$w$c<= @ a7 w1 w2 w3) -}
+14b090908b6937833c55c23f1118730a
+  $fOrdNumber_$c> ::
+    (GHC.Classes.Eq (Data.Graph.Inductive.Query.SP.DAG.Number a),
+     GHC.Classes.Ord a) =>
+    Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><L,1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, True)
+                (\ @ a7
+                   w :: GHC.Classes.Eq (Data.Graph.Inductive.Query.SP.DAG.Number a7)
+                   w1 :: GHC.Classes.Ord a7
+                   w2 :: Data.Graph.Inductive.Query.SP.DAG.Number a7
+                   w3 :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 Data.Graph.Inductive.Query.SP.DAG.$w$c> @ a7 w1 w2 w3) -}
+14b090908b6937833c55c23f1118730a
+  $fOrdNumber_$c>= ::
+    (GHC.Classes.Eq (Data.Graph.Inductive.Query.SP.DAG.Number a),
+     GHC.Classes.Ord a) =>
+    Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><L,1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, True)
+                (\ @ a7
+                   w :: GHC.Classes.Eq (Data.Graph.Inductive.Query.SP.DAG.Number a7)
+                   w1 :: GHC.Classes.Ord a7
+                   w2 :: Data.Graph.Inductive.Query.SP.DAG.Number a7
+                   w3 :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 Data.Graph.Inductive.Query.SP.DAG.$w$c>= @ a7 w1 w2 w3) -}
+14b090908b6937833c55c23f1118730a
+  $fOrdNumber_$ccompare ::
+    (GHC.Classes.Eq (Data.Graph.Inductive.Query.SP.DAG.Number a),
+     GHC.Classes.Ord a) =>
+    Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a -> GHC.Types.Ordering
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><L,1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, True)
+                (\ @ a7
+                   w :: GHC.Classes.Eq (Data.Graph.Inductive.Query.SP.DAG.Number a7)
+                   w1 :: GHC.Classes.Ord a7
+                   w2 :: Data.Graph.Inductive.Query.SP.DAG.Number a7
+                   w3 :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 Data.Graph.Inductive.Query.SP.DAG.$w$ccompare @ a7 w1 w2 w3) -}
+14b090908b6937833c55c23f1118730a
+  $fOrdNumber_$cmax ::
+    (GHC.Classes.Eq (Data.Graph.Inductive.Query.SP.DAG.Number a),
+     GHC.Classes.Ord a) =>
+    Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><L,1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, True)
+                (\ @ a7
+                   w :: GHC.Classes.Eq (Data.Graph.Inductive.Query.SP.DAG.Number a7)
+                   w1 :: GHC.Classes.Ord a7
+                   w2 :: Data.Graph.Inductive.Query.SP.DAG.Number a7
+                   w3 :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 Data.Graph.Inductive.Query.SP.DAG.$w$cmax @ a7 w1 w2 w3) -}
+14b090908b6937833c55c23f1118730a
+  $fOrdNumber_$cmin ::
+    (GHC.Classes.Eq (Data.Graph.Inductive.Query.SP.DAG.Number a),
+     GHC.Classes.Ord a) =>
+    Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><L,1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, True)
+                (\ @ a7
+                   w :: GHC.Classes.Eq (Data.Graph.Inductive.Query.SP.DAG.Number a7)
+                   w1 :: GHC.Classes.Ord a7
+                   w2 :: Data.Graph.Inductive.Query.SP.DAG.Number a7
+                   w3 :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 Data.Graph.Inductive.Query.SP.DAG.$w$cmin @ a7 w1 w2 w3) -}
+14b090908b6937833c55c23f1118730a
+  $fShowNumber ::
+    GHC.Show.Show a =>
+    GHC.Show.Show (Data.Graph.Inductive.Query.SP.DAG.Number a)
+  DFunId[0]
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a7 $dShow :: GHC.Show.Show a7.
+                  @ (Data.Graph.Inductive.Query.SP.DAG.Number a7)
+                  (Data.Graph.Inductive.Query.SP.DAG.$fShowNumber_$cshowsPrec
+                     @ a7
+                     $dShow)
+                  (Data.Graph.Inductive.Query.SP.DAG.$fShowNumber_$cshow @ a7 $dShow)
+                  (Data.Graph.Inductive.Query.SP.DAG.$fShowNumber_$cshowList
+                     @ a7
+                     $dShow) -}
+66ec5d1dacec63b08d6dddb657eab43f
+  $fShowNumber1 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 0) -}
+ea7666f9ca5554918c28a11ae7e556ce
+  $fShowNumber2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Number "#) -}
+c96e0cf5d06880aa0c8d8af312b4369a
+  $fShowNumber3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11) -}
+c95a4d262c1ff99553d1a69964052026
+  $fShowNumber4 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Data.Graph.Inductive.Query.SP.DAG.$fShowNumber5) -}
+643bcbe007984d5a0ebf7a65147a0af8
+  $fShowNumber5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "NegativeInfinity"#) -}
+61cb91cc582fb76725ddb2b100dcb071
+  $fShowNumber6 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Data.Graph.Inductive.Query.SP.DAG.$fShowNumber7) -}
+aff12541a6908a4bc1d6c3716eeaa983
+  $fShowNumber7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Infinity"#) -}
+14b090908b6937833c55c23f1118730a
+  $fShowNumber_$cshow ::
+    GHC.Show.Show a =>
+    Data.Graph.Inductive.Query.SP.DAG.Number a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,1*U(1*C1(C1(C1(U))),A,A)><S,1*U>,
+     Unfolding: (\ @ a7
+                   $dShow :: GHC.Show.Show a7
+                   x :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 case x of wild {
+                   Data.Graph.Inductive.Query.SP.DAG.Infinity
+                   -> Data.Graph.Inductive.Query.SP.DAG.$fShowNumber7
+                   Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                   -> Data.Graph.Inductive.Query.SP.DAG.$fShowNumber5
+                   Data.Graph.Inductive.Query.SP.DAG.Number b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Data.Graph.Inductive.Query.SP.DAG.$fShowNumber2
+                        (GHC.Show.showsPrec
+                           @ a7
+                           $dShow
+                           Data.Graph.Inductive.Query.SP.DAG.$fShowNumber3
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char)) }) -}
+14b090908b6937833c55c23f1118730a
+  $fShowNumber_$cshowList ::
+    GHC.Show.Show a =>
+    [Data.Graph.Inductive.Query.SP.DAG.Number a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a7
+                   $dShow :: GHC.Show.Show a7
+                   eta :: [Data.Graph.Inductive.Query.SP.DAG.Number a7]
+                   eta1 :: GHC.Base.String ->
+                 GHC.Show.showList__
+                   @ (Data.Graph.Inductive.Query.SP.DAG.Number a7)
+                   (Data.Graph.Inductive.Query.SP.DAG.$fShowNumber_$cshowsPrec
+                      @ a7
+                      $dShow
+                      Data.Graph.Inductive.Query.SP.DAG.$fShowNumber1)
+                   eta
+                   eta1) -}
+14b090908b6937833c55c23f1118730a
+  $fShowNumber_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(U)><S,1*U>,
+     Unfolding: (\ @ a7
+                   $dShow :: GHC.Show.Show a7
+                   ds :: GHC.Types.Int
+                   ds1 :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 case ds1 of wild {
+                   Data.Graph.Inductive.Query.SP.DAG.Infinity
+                   -> Data.Graph.Inductive.Query.SP.DAG.$fShowNumber6
+                   Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                   -> Data.Graph.Inductive.Query.SP.DAG.$fShowNumber4
+                   Data.Graph.Inductive.Query.SP.DAG.Number b1
+                   -> case ds of wild1 { GHC.Types.I# x ->
+                      let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = GHC.Show.showsPrec
+                            @ a7
+                            $dShow
+                            Data.Graph.Inductive.Query.SP.DAG.$fShowNumber3
+                            b1
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# x 11) of wild2 {
+                        GHC.Types.False
+                        -> \ x1 :: GHC.Base.String ->
+                           GHC.Base.++
+                             @ GHC.Types.Char
+                             Data.Graph.Inductive.Query.SP.DAG.$fShowNumber2
+                             (g x1)
+                        GHC.Types.True
+                        -> \ x1 :: GHC.Base.String ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows9
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Data.Graph.Inductive.Query.SP.DAG.$fShowNumber2
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x1))) } } }) -}
+14b090908b6937833c55c23f1118730a
+  $w$c< ::
+    GHC.Classes.Ord a =>
+    Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a7
+                   w :: GHC.Classes.Ord a7
+                   w1 :: Data.Graph.Inductive.Query.SP.DAG.Number a7
+                   w2 :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 case w1 of wild {
+                   DEFAULT
+                   -> case w2 of wild1 {
+                        DEFAULT
+                        -> case wild of wild2 {
+                             Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                             -> case wild1 of wild3 {
+                                  Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                                  -> GHC.Types.False
+                                  Data.Graph.Inductive.Query.SP.DAG.Number ipv -> GHC.Types.True }
+                             Data.Graph.Inductive.Query.SP.DAG.Number ipv
+                             -> case wild1 of wild3 {
+                                  Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                                  -> GHC.Types.False
+                                  Data.Graph.Inductive.Query.SP.DAG.Number ipv1
+                                  -> case GHC.Classes.compare @ a7 w ipv ipv1 of wild4 {
+                                       DEFAULT -> GHC.Types.False
+                                       GHC.Types.LT -> GHC.Types.True } } }
+                        Data.Graph.Inductive.Query.SP.DAG.Infinity -> GHC.Types.True }
+                   Data.Graph.Inductive.Query.SP.DAG.Infinity
+                   -> case w2 of wild1 { DEFAULT -> GHC.Types.False } }) -}
+14b090908b6937833c55c23f1118730a
+  $w$c<= ::
+    GHC.Classes.Ord a =>
+    Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a7
+                   w :: GHC.Classes.Ord a7
+                   w1 :: Data.Graph.Inductive.Query.SP.DAG.Number a7
+                   w2 :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 case w1 of wild {
+                   DEFAULT
+                   -> case w2 of wild1 {
+                        DEFAULT
+                        -> case wild of wild2 {
+                             Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                             -> GHC.Types.True
+                             Data.Graph.Inductive.Query.SP.DAG.Number ipv
+                             -> case wild1 of wild3 {
+                                  Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                                  -> GHC.Types.False
+                                  Data.Graph.Inductive.Query.SP.DAG.Number ipv1
+                                  -> case GHC.Classes.compare @ a7 w ipv ipv1 of wild4 {
+                                       DEFAULT -> GHC.Types.True
+                                       GHC.Types.GT -> GHC.Types.False } } }
+                        Data.Graph.Inductive.Query.SP.DAG.Infinity -> GHC.Types.True }
+                   Data.Graph.Inductive.Query.SP.DAG.Infinity
+                   -> case w2 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Data.Graph.Inductive.Query.SP.DAG.Infinity
+                        -> GHC.Types.True } }) -}
+14b090908b6937833c55c23f1118730a
+  $w$c> ::
+    GHC.Classes.Ord a =>
+    Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a7
+                   w :: GHC.Classes.Ord a7
+                   w1 :: Data.Graph.Inductive.Query.SP.DAG.Number a7
+                   w2 :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 case w1 of wild {
+                   DEFAULT
+                   -> case w2 of wild1 {
+                        DEFAULT
+                        -> case wild of wild2 {
+                             Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                             -> GHC.Types.False
+                             Data.Graph.Inductive.Query.SP.DAG.Number ipv
+                             -> case wild1 of wild3 {
+                                  Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                                  -> GHC.Types.True
+                                  Data.Graph.Inductive.Query.SP.DAG.Number ipv1
+                                  -> case GHC.Classes.compare @ a7 w ipv ipv1 of wild4 {
+                                       DEFAULT -> GHC.Types.False
+                                       GHC.Types.GT -> GHC.Types.True } } }
+                        Data.Graph.Inductive.Query.SP.DAG.Infinity -> GHC.Types.False }
+                   Data.Graph.Inductive.Query.SP.DAG.Infinity
+                   -> case w2 of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Data.Graph.Inductive.Query.SP.DAG.Infinity
+                        -> GHC.Types.False } }) -}
+14b090908b6937833c55c23f1118730a
+  $w$c>= ::
+    GHC.Classes.Ord a =>
+    Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a7
+                   w :: GHC.Classes.Ord a7
+                   w1 :: Data.Graph.Inductive.Query.SP.DAG.Number a7
+                   w2 :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 case w1 of wild {
+                   DEFAULT
+                   -> case w2 of wild1 {
+                        DEFAULT
+                        -> case wild of wild2 {
+                             Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                             -> case wild1 of wild3 {
+                                  Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                                  -> GHC.Types.True
+                                  Data.Graph.Inductive.Query.SP.DAG.Number ipv -> GHC.Types.False }
+                             Data.Graph.Inductive.Query.SP.DAG.Number ipv
+                             -> case wild1 of wild3 {
+                                  Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                                  -> GHC.Types.True
+                                  Data.Graph.Inductive.Query.SP.DAG.Number ipv1
+                                  -> case GHC.Classes.compare @ a7 w ipv ipv1 of wild4 {
+                                       DEFAULT -> GHC.Types.True
+                                       GHC.Types.LT -> GHC.Types.False } } }
+                        Data.Graph.Inductive.Query.SP.DAG.Infinity -> GHC.Types.False }
+                   Data.Graph.Inductive.Query.SP.DAG.Infinity
+                   -> case w2 of wild1 { DEFAULT -> GHC.Types.True } }) -}
+14b090908b6937833c55c23f1118730a
+  $w$ccompare ::
+    GHC.Classes.Ord a =>
+    Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a -> GHC.Types.Ordering
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a7
+                   w :: GHC.Classes.Ord a7
+                   w1 :: Data.Graph.Inductive.Query.SP.DAG.Number a7
+                   w2 :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 case w1 of wild {
+                   DEFAULT
+                   -> case w2 of wild1 {
+                        DEFAULT
+                        -> case wild of wild2 {
+                             Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                             -> case wild1 of wild3 {
+                                  Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity -> GHC.Types.EQ
+                                  Data.Graph.Inductive.Query.SP.DAG.Number ipv -> GHC.Types.LT }
+                             Data.Graph.Inductive.Query.SP.DAG.Number ipv
+                             -> case wild1 of wild3 {
+                                  Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity -> GHC.Types.GT
+                                  Data.Graph.Inductive.Query.SP.DAG.Number ipv1
+                                  -> GHC.Classes.compare @ a7 w ipv ipv1 } }
+                        Data.Graph.Inductive.Query.SP.DAG.Infinity -> GHC.Types.LT }
+                   Data.Graph.Inductive.Query.SP.DAG.Infinity
+                   -> case w2 of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        Data.Graph.Inductive.Query.SP.DAG.Infinity -> GHC.Types.EQ } }) -}
+14b090908b6937833c55c23f1118730a
+  $w$cmax ::
+    GHC.Classes.Ord a =>
+    Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a7
+                   w :: GHC.Classes.Ord a7
+                   w1 :: Data.Graph.Inductive.Query.SP.DAG.Number a7
+                   w2 :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 case w1 of wild {
+                   DEFAULT
+                   -> case w2 of wild1 {
+                        DEFAULT
+                        -> case wild of wild2 {
+                             Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity -> wild1
+                             Data.Graph.Inductive.Query.SP.DAG.Number ipv
+                             -> case wild1 of wild3 {
+                                  Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity -> wild2
+                                  Data.Graph.Inductive.Query.SP.DAG.Number ipv1
+                                  -> case GHC.Classes.compare @ a7 w ipv ipv1 of wild4 {
+                                       DEFAULT -> wild3 GHC.Types.GT -> wild2 } } }
+                        Data.Graph.Inductive.Query.SP.DAG.Infinity
+                        -> Data.Graph.Inductive.Query.SP.DAG.Infinity @ a7 }
+                   Data.Graph.Inductive.Query.SP.DAG.Infinity
+                   -> case w2 of wild1 { DEFAULT ->
+                      Data.Graph.Inductive.Query.SP.DAG.Infinity @ a7 } }) -}
+14b090908b6937833c55c23f1118730a
+  $w$cmin ::
+    GHC.Classes.Ord a =>
+    Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a
+    -> Data.Graph.Inductive.Query.SP.DAG.Number a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a7
+                   w :: GHC.Classes.Ord a7
+                   w1 :: Data.Graph.Inductive.Query.SP.DAG.Number a7
+                   w2 :: Data.Graph.Inductive.Query.SP.DAG.Number a7 ->
+                 case w1 of wild {
+                   DEFAULT
+                   -> case w2 of wild1 {
+                        DEFAULT
+                        -> case wild of wild2 {
+                             Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                             -> Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity @ a7
+                             Data.Graph.Inductive.Query.SP.DAG.Number ipv
+                             -> case wild1 of wild3 {
+                                  Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity
+                                  -> Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity @ a7
+                                  Data.Graph.Inductive.Query.SP.DAG.Number ipv1
+                                  -> case GHC.Classes.compare @ a7 w ipv ipv1 of wild4 {
+                                       DEFAULT -> wild2 GHC.Types.GT -> wild3 } } }
+                        Data.Graph.Inductive.Query.SP.DAG.Infinity -> wild }
+                   Data.Graph.Inductive.Query.SP.DAG.Infinity -> w2 }) -}
+6b744183be411cf23a06ab00bf936561
+  $w$stracePath ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# (GHC.Base.Maybe Data.Graph.Inductive.Graph.Node)
+    -> (# Data.Graph.Inductive.Graph.Node,
+          [Data.Graph.Inductive.Graph.Node] #)
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><L,U>, Inline: [0] -}
+7edb08147abdb54d4e2f501ae9410bb8
+  $wa ::
+    (Data.Graph.Inductive.Graph.Graph gr, GHC.Real.Real b,
+     Data.Foldable.Foldable f) =>
+    GHC.Base.Maybe Data.Graph.Inductive.Graph.Node
+    -> Data.Graph.Inductive.Query.SP.DAG.Number b
+    -> Data.Graph.Inductive.Query.SP.DAG.Number b
+    -> (Data.Graph.Inductive.Query.SP.DAG.Number b
+        -> Data.Graph.Inductive.Query.SP.DAG.Number b -> GHC.Types.Bool)
+    -> GHC.Prim.Int#
+    -> f Data.Graph.Inductive.Graph.Node
+    -> gr a b
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (Data.Vector.Vector (Data.Graph.Inductive.Query.SP.DAG.Number b),
+           Data.Vector.Vector
+             (GHC.Base.Maybe Data.Graph.Inductive.Graph.Node)) #)
+  {- Arity: 11,
+     Strictness: <L,U(A,A,C(C1(U(1*U,A))),A,A,A,A,A,A)><L,1*U(1*U,A,A)><L,1*U(A,A,A,A,A,1*C1(C1(C1(U))),A,A,A,A,A,A,A,A,A,A)><L,1*U><L,U><L,U><L,C(C1(U))><L,U><L,U><L,U><L,U>,
+     Inline: [0] -}
+d08bd5dc1842e232da9752053db9d7b0
+  $wtracePath ::
+    GHC.Base.MonadPlus m =>
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# (GHC.Base.Maybe Data.Graph.Inductive.Graph.Node)
+    -> m Data.Graph.Inductive.Graph.Node
+  {- Arity: 5,
+     Strictness: <S(LLLC(C(S))),U(A,U(A,A,A,C(U),A),U,C(C1(U)))><L,U><L,U><L,U><L,U>,
+     Inline: [0] -}
+14b090908b6937833c55c23f1118730a
+  data Number a = Infinity | NegativeInfinity | Number a
+    Promotable
+249fdad59641aa330139c95b69958ae1
+  longestPath ::
+    (Data.Graph.Inductive.Graph.Graph gr, GHC.Real.Real b,
+     Data.Foldable.Foldable f) =>
+    GHC.Types.Int
+    -> f Data.Graph.Inductive.Graph.Node
+    -> gr a b
+    -> GHC.Types.IO Data.Graph.Inductive.Graph.Path
+  {- Arity: 3,
+     Strictness: <L,U(A,A,C(C1(U(1*U,A))),A,A,A,A,A,A)><L,U(U,1*U,A)><L,U(A,A,A,A,A,C(C1(C1(U))),A,A,A,A,A,A,A,A,A,A)> -}
+e23eff72a37e752d50a1c90ce7aec91a
+  longestPathBetweenNodes ::
+    (Data.Graph.Inductive.Graph.Graph gr, GHC.Real.Real b,
+     Data.Foldable.Foldable f) =>
+    Data.Graph.Inductive.Graph.Node
+    -> Data.Graph.Inductive.Graph.Node
+    -> GHC.Types.Int
+    -> f Data.Graph.Inductive.Graph.Node
+    -> gr a b
+    -> GHC.Types.IO Data.Graph.Inductive.Graph.Path
+  {- Arity: 3,
+     Strictness: <L,U(A,A,C(C1(U(1*U,A))),A,A,A,A,A,A)><L,U(U(U,U,U,U,U,U,U),1*U,A)><L,U(A,A,A,A,A,C(C1(C1(U))),A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: (\ @ (f :: * -> *)
+                   @ (gr :: * -> * -> *)
+                   @ a7
+                   @ b
+                   $dGraph :: Data.Graph.Inductive.Graph.Graph gr
+                   $dReal :: GHC.Real.Real b
+                   $dFoldable :: Data.Foldable.Foldable f ->
+                 let {
+                   $dOrd :: GHC.Classes.Ord b = GHC.Real.$p2Real @ b $dReal
+                 } in
+                 let {
+                   lvl20 :: Data.Graph.Inductive.Query.SP.DAG.Number b
+                            -> Data.Graph.Inductive.Query.SP.DAG.Number b -> GHC.Types.Bool
+                     {- Arity: 2 -}
+                   = \ w :: Data.Graph.Inductive.Query.SP.DAG.Number b
+                       w1 :: Data.Graph.Inductive.Query.SP.DAG.Number b ->
+                     Data.Graph.Inductive.Query.SP.DAG.$w$c< @ b $dOrd w w1
+                 } in
+                 let {
+                   a8 :: b
+                   = GHC.Num.fromInteger
+                       @ b
+                       (GHC.Real.$p1Real @ b $dReal)
+                       Data.Graph.Inductive.Query.SP.DAG.longestPathBetweenNodes1
+                 } in
+                 let {
+                   lvl21 :: Data.Graph.Inductive.Query.SP.DAG.Number b
+                   = Data.Graph.Inductive.Query.SP.DAG.Number @ b a8
+                 } in
+                 (\ s :: Data.Graph.Inductive.Graph.Node
+                    d :: Data.Graph.Inductive.Graph.Node
+                    l :: GHC.Types.Int
+                    t :: f Data.Graph.Inductive.Graph.Node
+                    g :: gr a7 b
+                    s1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                  case l of ww { GHC.Types.I# ww1 ->
+                  case Data.Graph.Inductive.Query.SP.DAG.$wa
+                         @ b
+                         @ f
+                         @ gr
+                         @ a7
+                         $dGraph
+                         $dReal
+                         $dFoldable
+                         (GHC.Base.Just @ Data.Graph.Inductive.Graph.Node s)
+                         lvl21
+                         (Data.Graph.Inductive.Query.SP.DAG.NegativeInfinity @ b)
+                         lvl20
+                         ww1
+                         t
+                         g
+                         s1 of ds1 { (#,#) ipv ipv1 ->
+                  case ipv1 of wild { (,) ds predecessor ->
+                  (# ipv,
+                     Data.Graph.Inductive.Query.SP.DAG.longestPathBetweenNodes_$stracePath
+                       d
+                       predecessor #) } } })
+                   `cast`
+                 (<Data.Graph.Inductive.Graph.Node>_R
+                  ->_R <Data.Graph.Inductive.Graph.Node>_R
+                  ->_R <GHC.Types.Int>_R
+                  ->_R <f Data.Graph.Inductive.Graph.Node>_R
+                  ->_R <gr a7 b>_R
+                  ->_R Sym (GHC.Types.NTCo:IO[0]
+                                <Data.Graph.Inductive.Graph.Path>_R))) -}
+45288d83cb2a094da2a28b3d1a63b2cb
+  longestPathBetweenNodes1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 0) -}
+6b9aedc1ff95a6d93b37f3fae6877038
+  longestPathBetweenNodes_$stracePath ::
+    Data.Graph.Inductive.Graph.Node
+    -> Data.Vector.Vector
+         (GHC.Base.Maybe Data.Graph.Inductive.Graph.Node)
+    -> [Data.Graph.Inductive.Graph.Node]
+  {- Arity: 2, Strictness: <S,1*U(U)><S,1*U(U,U,U)>m2,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Data.Graph.Inductive.Graph.Node
+                   w1 :: Data.Vector.Vector
+                           (GHC.Base.Maybe Data.Graph.Inductive.Graph.Node) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Data.Vector.Vector ww3 ww4 ww5 ->
+                 case Data.Graph.Inductive.Query.SP.DAG.$w$stracePath
+                        ww1
+                        ww3
+                        ww4
+                        ww5 of ww6 { (#,#) ww7 ww8 ->
+                 GHC.Types.: @ Data.Graph.Inductive.Graph.Node ww7 ww8 } } }) -}
+73f1ee8397fae437c95e98ffad3bc192
+  longestPathFromSource ::
+    (Data.Graph.Inductive.Graph.Graph gr, GHC.Real.Real b,
+     Data.Foldable.Foldable f) =>
+    Data.Graph.Inductive.Graph.Node
+    -> GHC.Types.Int
+    -> f Data.Graph.Inductive.Graph.Node
+    -> gr a b
+    -> GHC.Types.IO Data.Graph.Inductive.Graph.Path
+  {- Arity: 3,
+     Strictness: <L,U(A,A,C(C1(U(1*U,A))),A,A,A,A,A,A)><L,U(U(U,U,U,U,U,U,U),1*U,A)><L,U(A,A,A,A,A,C(C1(C1(U))),A,A,A,A,A,A,A,A,A,A)> -}
+bf5542b9fb3a95b19d5fe5385af54d48
+  runPaths ::
+    (Data.Graph.Inductive.Graph.Graph gr, GHC.Real.Real b,
+     Data.Foldable.Foldable f) =>
+    GHC.Base.Maybe Data.Graph.Inductive.Graph.Node
+    -> Data.Graph.Inductive.Query.SP.DAG.Number b
+    -> Data.Graph.Inductive.Query.SP.DAG.Number b
+    -> (Data.Graph.Inductive.Query.SP.DAG.Number b
+        -> Data.Graph.Inductive.Query.SP.DAG.Number b -> GHC.Types.Bool)
+    -> GHC.Types.Int
+    -> f Data.Graph.Inductive.Graph.Node
+    -> gr a b
+    -> GHC.Types.IO
+         (Data.Vector.Vector (Data.Graph.Inductive.Query.SP.DAG.Number b),
+          Data.Vector.Vector
+            (GHC.Base.Maybe Data.Graph.Inductive.Graph.Node))
+  {- Arity: 11,
+     Strictness: <L,U(A,A,C(C1(U(1*U,A))),A,A,A,A,A,A)><L,1*U(1*U,A,A)><L,1*U(A,A,A,A,A,1*C1(C1(C1(U))),A,A,A,A,A,A,A,A,A,A)><L,1*U><L,U><L,U><L,C(C1(U))><S,1*U(U)><L,U><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Data.Graph.Inductive.Query.SP.DAG.runPaths1
+                  `cast`
+                (forall b (f :: * -> *) (gr :: * -> * -> *) a7.
+                 <Data.Graph.Inductive.Graph.Graph gr>_R
+                 ->_R <GHC.Real.Real b>_R
+                 ->_R <Data.Foldable.Foldable f>_R
+                 ->_R <GHC.Base.Maybe Data.Graph.Inductive.Graph.Node>_R
+                 ->_R <Data.Graph.Inductive.Query.SP.DAG.Number b>_R
+                 ->_R <Data.Graph.Inductive.Query.SP.DAG.Number b>_R
+                 ->_R <Data.Graph.Inductive.Query.SP.DAG.Number b
+                       -> Data.Graph.Inductive.Query.SP.DAG.Number b -> GHC.Types.Bool>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R <f Data.Graph.Inductive.Graph.Node>_R
+                 ->_R <gr a7 b>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0]
+                               <(Data.Vector.Vector (Data.Graph.Inductive.Query.SP.DAG.Number b),
+                                 Data.Vector.Vector
+                                   (GHC.Base.Maybe Data.Graph.Inductive.Graph.Node))>_R)) -}
+39f1db627415ce08410c1f95ce7e8432
+  runPaths1 ::
+    (Data.Graph.Inductive.Graph.Graph gr, GHC.Real.Real b,
+     Data.Foldable.Foldable f) =>
+    GHC.Base.Maybe Data.Graph.Inductive.Graph.Node
+    -> Data.Graph.Inductive.Query.SP.DAG.Number b
+    -> Data.Graph.Inductive.Query.SP.DAG.Number b
+    -> (Data.Graph.Inductive.Query.SP.DAG.Number b
+        -> Data.Graph.Inductive.Query.SP.DAG.Number b -> GHC.Types.Bool)
+    -> GHC.Types.Int
+    -> f Data.Graph.Inductive.Graph.Node
+    -> gr a b
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (Data.Vector.Vector (Data.Graph.Inductive.Query.SP.DAG.Number b),
+           Data.Vector.Vector
+             (GHC.Base.Maybe Data.Graph.Inductive.Graph.Node)) #)
+  {- Arity: 11,
+     Strictness: <L,U(A,A,C(C1(U(1*U,A))),A,A,A,A,A,A)><L,1*U(1*U,A,A)><L,1*U(A,A,A,A,A,1*C1(C1(C1(U))),A,A,A,A,A,A,A,A,A,A)><L,1*U><L,U><L,U><L,C(C1(U))><S,1*U(U)><L,U><L,U><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (11, True, False)
+                (\ @ b
+                   @ (f :: * -> *)
+                   @ (gr :: * -> * -> *)
+                   @ a7
+                   w :: Data.Graph.Inductive.Graph.Graph gr
+                   w1 :: GHC.Real.Real b
+                   w2 :: Data.Foldable.Foldable f
+                   w3 :: GHC.Base.Maybe Data.Graph.Inductive.Graph.Node
+                   w4 :: Data.Graph.Inductive.Query.SP.DAG.Number b
+                   w5 :: Data.Graph.Inductive.Query.SP.DAG.Number b
+                   w6 :: Data.Graph.Inductive.Query.SP.DAG.Number b
+                         -> Data.Graph.Inductive.Query.SP.DAG.Number b -> GHC.Types.Bool
+                   w7 :: GHC.Types.Int
+                   w8 :: f Data.Graph.Inductive.Graph.Node
+                   w9 :: gr a7 b
+                   w10 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case w7 of ww { GHC.Types.I# ww1 ->
+                 Data.Graph.Inductive.Query.SP.DAG.$wa
+                   @ b
+                   @ f
+                   @ gr
+                   @ a7
+                   w
+                   w1
+                   w2
+                   w3
+                   w4
+                   w5
+                   w6
+                   ww1
+                   w8
+                   w9
+                   w10 }) -}
+cc3d0ad9375ca6ae3b1f45e99ddd2dfb
+  shortestPathBetweenNodes ::
+    (Data.Graph.Inductive.Graph.Graph gr, GHC.Real.Real b,
+     Data.Foldable.Foldable f) =>
+    Data.Graph.Inductive.Graph.Node
+    -> Data.Graph.Inductive.Graph.Node
+    -> GHC.Types.Int
+    -> f Data.Graph.Inductive.Graph.Node
+    -> gr a b
+    -> GHC.Types.IO Data.Graph.Inductive.Graph.Path
+  {- Arity: 3,
+     Strictness: <L,U(A,A,C(C1(U(1*U,A))),A,A,A,A,A,A)><L,U(U(U,U,U,U,U,U,U),1*U,A)><L,U(A,A,A,A,A,C(C1(C1(U))),A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: (\ @ (f :: * -> *)
+                   @ (gr :: * -> * -> *)
+                   @ a7
+                   @ b
+                   $dGraph :: Data.Graph.Inductive.Graph.Graph gr
+                   $dReal :: GHC.Real.Real b
+                   $dFoldable :: Data.Foldable.Foldable f ->
+                 let {
+                   $dOrd :: GHC.Classes.Ord b = GHC.Real.$p2Real @ b $dReal
+                 } in
+                 let {
+                   lvl20 :: Data.Graph.Inductive.Query.SP.DAG.Number b
+                            -> Data.Graph.Inductive.Query.SP.DAG.Number b -> GHC.Types.Bool
+                     {- Arity: 2 -}
+                   = \ w :: Data.Graph.Inductive.Query.SP.DAG.Number b
+                       w1 :: Data.Graph.Inductive.Query.SP.DAG.Number b ->
+                     Data.Graph.Inductive.Query.SP.DAG.$w$c> @ b $dOrd w w1
+                 } in
+                 let {
+                   a8 :: b
+                   = GHC.Num.fromInteger
+                       @ b
+                       (GHC.Real.$p1Real @ b $dReal)
+                       Data.Graph.Inductive.Query.SP.DAG.longestPathBetweenNodes1
+                 } in
+                 let {
+                   lvl21 :: Data.Graph.Inductive.Query.SP.DAG.Number b
+                   = Data.Graph.Inductive.Query.SP.DAG.Number @ b a8
+                 } in
+                 (\ s :: Data.Graph.Inductive.Graph.Node
+                    d :: Data.Graph.Inductive.Graph.Node
+                    l :: GHC.Types.Int
+                    t :: f Data.Graph.Inductive.Graph.Node
+                    g :: gr a7 b
+                    s1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                  case l of ww { GHC.Types.I# ww1 ->
+                  case Data.Graph.Inductive.Query.SP.DAG.$wa
+                         @ b
+                         @ f
+                         @ gr
+                         @ a7
+                         $dGraph
+                         $dReal
+                         $dFoldable
+                         (GHC.Base.Just @ Data.Graph.Inductive.Graph.Node s)
+                         lvl21
+                         (Data.Graph.Inductive.Query.SP.DAG.Infinity @ b)
+                         lvl20
+                         ww1
+                         t
+                         g
+                         s1 of ds1 { (#,#) ipv ipv1 ->
+                  case ipv1 of wild { (,) ds predecessor ->
+                  (# ipv,
+                     Data.Graph.Inductive.Query.SP.DAG.longestPathBetweenNodes_$stracePath
+                       d
+                       predecessor #) } } })
+                   `cast`
+                 (<Data.Graph.Inductive.Graph.Node>_R
+                  ->_R <Data.Graph.Inductive.Graph.Node>_R
+                  ->_R <GHC.Types.Int>_R
+                  ->_R <f Data.Graph.Inductive.Graph.Node>_R
+                  ->_R <gr a7 b>_R
+                  ->_R Sym (GHC.Types.NTCo:IO[0]
+                                <Data.Graph.Inductive.Graph.Path>_R))) -}
+6c4aa6cd7628d552322214a601dab202
+  tracePath ::
+    GHC.Base.MonadPlus m =>
+    Data.Graph.Inductive.Graph.Node
+    -> Data.Vector.Vector
+         (GHC.Base.Maybe Data.Graph.Inductive.Graph.Node)
+    -> m Data.Graph.Inductive.Graph.Node
+  {- Arity: 3,
+     Strictness: <S(LLLC(C(S))),U(A,U(A,A,A,C(U),A),U,C(C1(U)))><S,1*U(U)><S,1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ (m :: * -> *)
+                   w :: GHC.Base.MonadPlus m
+                   w1 :: Data.Graph.Inductive.Graph.Node
+                   w2 :: Data.Vector.Vector
+                           (GHC.Base.Maybe Data.Graph.Inductive.Graph.Node) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { Data.Vector.Vector ww3 ww4 ww5 ->
+                 Data.Graph.Inductive.Query.SP.DAG.$wtracePath
+                   @ m
+                   w
+                   ww1
+                   ww3
+                   ww4
+                   ww5 } }) -}
+instance GHC.Classes.Eq [Data.Graph.Inductive.Query.SP.DAG.Number]
+  = Data.Graph.Inductive.Query.SP.DAG.$fEqNumber
+instance GHC.Base.Functor [Data.Graph.Inductive.Query.SP.DAG.Number]
+  = Data.Graph.Inductive.Query.SP.DAG.$fFunctorNumber
+instance GHC.Classes.Ord [Data.Graph.Inductive.Query.SP.DAG.Number]
+  = Data.Graph.Inductive.Query.SP.DAG.$fOrdNumber
+instance GHC.Show.Show [Data.Graph.Inductive.Query.SP.DAG.Number]
+  = Data.Graph.Inductive.Query.SP.DAG.$fShowNumber
+"SPEC tracePath @ []" [ALWAYS] forall $dMonadPlus :: GHC.Base.MonadPlus
+                                                       []
+  Data.Graph.Inductive.Query.SP.DAG.tracePath @ [] $dMonadPlus
+  = Data.Graph.Inductive.Query.SP.DAG.longestPathBetweenNodes_$stracePath
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
